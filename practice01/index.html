@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bigger Words</title>
+    <script>
+        var arrayToUse = ['cat','whale', 'bird', 'frog','elephant'];
+
+        function biggerWords(compareString, myArray) {
+            console.log('Here is the string to compare' , compareString);
+            console.log('Here is the array to compare', myArray);
+            var output;
+            for(var i = 0; i <myArray.length; i++) {
+                if (compareString.length < myArray[i].length) {
+                    output = myArray[i];
+                    console.log('Here is the value of the output variable : ', output, ' which is longer than ', compareString);
+                };
+            };
+            if(output == null){
+                    console.log('There are no strings in the array that are longer than : ', compareString);
+            };
+        };
+        biggerWords('toad', arrayToUse);
+    </script>
+</head>
+<body>
+    <h1>Bigger Words</h1>
+    <h2>Please open your console</h2>
+</body>
+</html>
